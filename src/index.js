@@ -14,7 +14,7 @@ getUsers().then(result => {
       <td>${user.email}</td>
       </tr>`
   });
-  debugger;
+  debugger;//eslint-disable-line no-debugger
   global.document.getElementById('users').innerHTML = usersBody;
   const deleteLinks = global.document.getElementsByClassName('deleteUser');
 
