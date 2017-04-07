@@ -1,4 +1,5 @@
 import {getUsers,deleteUser} from './api/userApi';
+import './index.css';
 
 // Populate table of users via API call.
 getUsers().then(result => {
@@ -13,7 +14,7 @@ getUsers().then(result => {
       <td>${user.email}</td>
       </tr>`
   });
-
+  debugger;
   global.document.getElementById('users').innerHTML = usersBody;
   const deleteLinks = global.document.getElementsByClassName('deleteUser');
 
